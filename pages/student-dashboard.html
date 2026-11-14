@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | Assignment Portal</title>
+    <link rel="stylesheet" href="../css/student.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="logo-icon">📚</span>
+                <h2>EduSubmit</h2>
+            </div>
+
+            <p class="menu-heading">MAIN MENU</p>
+
+            <nav class="sidebar-nav">
+                <a href="student-dashboard.html" class="nav-link active">
+                    <span>🏠</span> Dashboard
+                </a>
+
+                <a href="assignments.html" class="nav-link">
+                    <span>📝</span> My Assignments
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span>📤</span> Submission History
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span>👤</span> My Profile
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="help-card">
+                    <span>💡</span>
+                    <h3>Need Help?</h3>
+                    <p>Contact your faculty for assignment-related queries.</p>
+                </div>
+
+                <a href="#" class="nav-link logout">
+                    <span>🚪</span> Logout
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Top Header -->
+            <header class="top-header">
+                <div>
+                    <p class="breadcrumb">Pages / Dashboard</p>
+                    <h2>Student Dashboard</h2>
+                </div>
+
+                <div class="header-right">
+                    <button class="notification-btn" aria-label="Notifications">
+                        🔔
+                        <span class="notification-dot"></span>
+                    </button>
+
+                    <div class="profile-info">
+                        <div class="avatar">S</div>
+                        <div>
+                            <h4>Student Name</h4>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Welcome Banner -->
+            <section class="welcome-banner">
+                <div>
+                    <p class="welcome-label">WELCOME BACK 👋</p>
+                    <h1>Hello, Student!</h1>
+                    <p>
+                        Stay organized, complete your assignments
+                        and achieve your academic goals.
+                    </p>
+                    <a href="assignments.html" class="primary-btn">
+                        View Assignments →
+                    </a>
+                </div>
+
+                <div class="welcome-illustration">🎓</div>
+            </section>
+
+            <!-- Statistics -->
+            <section class="stats-section">
+                <div class="section-heading">
+                    <h2>Academic Overview</h2>
+                    <p>Track your assignment progress</p>
+                </div>
+
+                <div class="stats-grid">
+
+                    <div class="stat-card total-card">
+                        <div class="stat-icon">📚</div>
+                        <p>Total Assignments</p>
+                        <h2 id="total-count">8</h2>
+                        <span>Assigned to you</span>
+                    </div>
+
+                    <div class="stat-card submitted-card">
+                        <div class="stat-icon">✅</div>
+                        <p>Submitted</p>
+                        <h2 id="submitted-count">4</h2>
+                        <span>Successfully submitted</span>
+                    </div>
+
+                    <div class="stat-card pending-card">
+                        <div class="stat-icon">⏳</div>
+                        <p>Pending</p>
+                        <h2 id="pending-count">3</h2>
+                        <span>Awaiting submission</span>
+                    </div>
+
+                    <div class="stat-card overdue-card">
+                        <div class="stat-icon">⚠️</div>
+                        <p>Overdue</p>
+                        <h2 id="overdue-count">1</h2>
+                        <span>Past deadline</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Recent Assignments -->
+            <section class="assignments-section">
+
+                <div class="section-heading heading-row">
+                    <div>
+                        <h2>Recent Assignments</h2>
+                        <p>Keep track of your latest academic tasks</p>
+                    </div>
+
+                    <a href="assignments.html" class="view-all">
+                        View All →
+                    </a>
+                </div>
+
+                <div class="assignment-list" id="recent-assignments">
+
+                    <!-- Assignments are displayed using JavaScript -->
+
+                </div>
+
+            </section>
+
+            <!-- Bottom Section -->
+            <section class="bottom-grid">
+
+                <div class="content-card">
+                    <h2>Upcoming Deadlines</h2>
+                    <p class="card-subtitle">Don't miss your submission dates</p>
+
+                    <div id="upcoming-deadlines">
+                        <!-- Deadlines are displayed using JavaScript -->
+                    </div>
+                </div>
+
+                <div class="content-card progress-card">
+                    <h2>Your Progress</h2>
+                    <p class="card-subtitle">Assignment submission overview</p>
+
+                    <div class="progress-circle">
+                        <div>
+                            <h2 id="progress-percentage">50%</h2>
+                            <p>Completed</p>
+                        </div>
+                    </div>
+
+                    <p class="progress-message">
+                        Keep going! You're making progress.
+                    </p>
+                </div>
+
+            </section>
+
+            <footer class="footer">
+                © 2026 EduSubmit – Online Assignment Submission Portal
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="../js/student.js"></script>
+
+</body>
+</html>
