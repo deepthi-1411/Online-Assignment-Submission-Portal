@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="View an assignment submission status."><title>Submission Status | EduSubmit</title><link rel="stylesheet" href="../css/upload.css"></head>
+<body>
+<div class="portal-shell">
+  <aside class="portal-sidebar"><a class="brand" href="student-dashboard.html"><span class="brand-icon">📚</span><span>EduSubmit</span></a><p class="menu-heading">MAIN MENU</p><nav class="sidebar-nav" aria-label="Main navigation"><a class="nav-link" href="student-dashboard.html"><span>🏠</span> Dashboard</a><a class="nav-link" href="assignments.html"><span>📝</span> My Assignments</a><a class="nav-link active" href="submission-history.html"><span>📤</span> Submission History</a></nav><div class="sidebar-help"><span>💡</span><h3>Need Help?</h3><p>Contact your faculty for assignment-related queries.</p></div></aside>
+  <main class="main-content"><header class="top-header"><div><p class="breadcrumb">Pages / Submission History / Status</p><h1>Submission Status</h1></div><div class="profile-info"><span class="avatar">S</span><div><strong>Student Name</strong><small>Student</small></div></div></header>
+    <div class="page-content"><a href="submission-history.html" class="back-link">← Back to Submission History</a>
+      <div id="status-message" class="notice" role="status" aria-live="polite" hidden></div>
+      <section id="status-panel" class="content-card status-panel" aria-labelledby="status-heading" hidden><div class="status-hero"><span class="status-check" aria-hidden="true">✓</span><div><span class="eyebrow">SUBMISSION RECEIPT</span><h2 id="status-heading">Submission details</h2><p id="status-description">Your saved submission information is shown below.</p></div><span id="submission-status" class="status-badge">—</span></div>
+        <dl class="detail-grid status-details"><div><dt>Submission ID</dt><dd id="submission-id">—</dd></div><div><dt>Assignment ID</dt><dd id="status-assignment-id">—</dd></div><div><dt>Filename</dt><dd id="status-filename">—</dd></div><div><dt>Submission date</dt><dd id="status-date">—</dd></div></dl>
+        <p class="demo-note">This status is stored in this browser for demonstration. File contents are not sent to a server.</p>
+      </section>
+      <section class="content-card not-found" id="status-not-found" hidden><span class="empty-icon">🔎</span><h2>Submission not found</h2><p id="not-found-copy">We couldn't find a saved submission for that ID. Open your history to choose a valid submission.</p></section>
+      <nav class="page-actions" aria-label="Submission navigation"><a class="primary-button" href="submission-history.html">View submission history</a><a class="secondary-button" href="assignments.html">Browse assignments</a></nav>
+      <footer class="page-footer">© 2026 EduSubmit – Online Assignment Submission Portal</footer>
+    </div>
+  </main>
+</div><script src="../js/upload.js"></script></body></html>
