@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Details | EduSubmit</title>
+    <link rel="stylesheet" href="../css/student.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <span class="logo-icon">📚</span>
+            <h2>EduSubmit</h2>
+        </div>
+
+        <p class="menu-heading">MAIN MENU</p>
+
+        <nav class="sidebar-nav">
+            <a href="student-dashboard.html" class="nav-link">
+                <span>🏠</span> Dashboard
+            </a>
+
+            <a href="assignments.html" class="nav-link active">
+                <span>📝</span> My Assignments
+            </a>
+
+            <a href="#" class="nav-link">
+                <span>📤</span> Submission History
+            </a>
+
+            <a href="#" class="nav-link">
+                <span>👤</span> My Profile
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="help-card">
+                <span>💡</span>
+                <h3>Need Help?</h3>
+                <p>Contact your faculty for assignment-related queries.</p>
+            </div>
+
+            <a href="#" class="nav-link logout">
+                <span>🚪</span> Logout
+            </a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <header class="top-header">
+            <div>
+                <p class="breadcrumb">Pages / My Assignments / Details</p>
+                <h2>Assignment Details</h2>
+            </div>
+
+            <div class="header-right">
+                <div class="profile-info">
+                    <div class="avatar">S</div>
+                    <div>
+                        <h4>Student Name</h4>
+                        <p>Student</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <a href="assignments.html" class="back-link">
+            ← Back to My Assignments
+        </a>
+
+        <!-- Assignment Information -->
+        <section class="details-banner">
+            <div>
+                <span class="details-label">ASSIGNMENT INFORMATION</span>
+                <h1 id="detail-title">Loading Assignment...</h1>
+                <p id="detail-subject">Please wait...</p>
+            </div>
+
+            <span class="details-icon">📘</span>
+        </section>
+
+        <!-- Details Grid -->
+        <section class="details-grid">
+
+            <div class="details-main">
+
+                <div class="details-card">
+                    <h2>📋 Assignment Overview</h2>
+
+                    <p class="details-description" id="detail-description">
+                        Loading description...
+                    </p>
+
+                    <div class="details-divider"></div>
+
+                    <h3>Assignment Instructions</h3>
+
+                    <ul class="instruction-list">
+                        <li>Read the assignment question carefully.</li>
+                        <li>Complete the work according to the given requirements.</li>
+                        <li>Prepare your document in the required format.</li>
+                        <li>Check your work before submission.</li>
+                        <li>Submit your assignment before the deadline.</li>
+                    </ul>
+                </div>
+
+                <div class="details-card">
+                    <h2>📌 Submission Guidelines</h2>
+
+                    <div class="guideline-item">
+                        <span>📄</span>
+                        <div>
+                            <h4>Accepted File Formats</h4>
+                            <p>PDF, DOC, DOCX and ZIP</p>
+                        </div>
+                    </div>
+
+                    <div class="guideline-item">
+                        <span>📦</span>
+                        <div>
+                            <h4>File Size</h4>
+                            <p>Follow the file-size limit specified by your faculty.</p>
+                        </div>
+                    </div>
+
+                    <div class="guideline-item">
+                        <span>⚠️</span>
+                        <div>
+                            <h4>Important Reminder</h4>
+                            <p>Ensure that your assignment is submitted before the deadline.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Side -->
+            <div class="details-side">
+
+                <div class="details-card">
+                    <h2>📅 Important Dates</h2>
+
+                    <div class="date-info">
+                        <p>Assignment Deadline</p>
+                        <h3 id="detail-deadline">--</h3>
+                    </div>
+
+                    <div class="date-info">
+                        <p>Current Submission Status</p>
+                        <span id="detail-status" class="status pending">
+                            Pending
+                        </span>
+                    </div>
+                </div>
+
+                <div class="details-card submission-card">
+                    <span class="submission-icon">📤</span>
+                    <h2>Ready to Submit?</h2>
+
+                    <p>
+                        Complete your assignment and proceed to the
+                        submission section.
+                    </p>
+
+                    <a href="#" id="submit-assignment-btn" class="submit-btn">
+                        Go to Submission →
+                    </a>
+
+                    <a href="assignments.html" class="secondary-btn">
+                        Back to Assignments
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            © 2026 EduSubmit – Online Assignment Submission Portal
+        </footer>
+
+    </main>
+</div>
+
+<script src="../js/student.js"></script>
+
+</body>
+</html>
