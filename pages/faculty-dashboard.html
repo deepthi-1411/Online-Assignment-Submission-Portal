@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Dashboard</title>
+    <link rel="stylesheet" href="../css/faculty.css">
+</head>
+<body>
+
+<header class="topbar">
+    <h2>Online Assignment Portal</h2>
+    <span>Faculty Panel</span>
+</header>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h3>Faculty Menu</h3>
+        <a href="faculty-dashboard.html">Dashboard</a>
+        <a href="create-assignment.html">Create Assignment</a>
+        <a href="manage-assignments.html">Manage Assignments</a>
+        <a href="../index.html">Logout</a>
+    </aside>
+
+    <main class="content">
+
+        <h1>Welcome, Faculty!</h1>
+        <p>Manage your assignments easily.</p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total Assignments</h3>
+                <h1 id="total">0</h1>
+            </div>
+
+            <div class="card">
+                <h3>Active Assignments</h3>
+                <h1 id="active">0</h1>
+            </div>
+
+            <div class="card">
+                <h3>Expired Assignments</h3>
+                <h1 id="expired">0</h1>
+            </div>
+
+        </div>
+
+        <h2>Quick Actions</h2>
+
+        <div class="actions">
+            <a href="create-assignment.html" class="btn">
+                Create Assignment
+            </a>
+
+            <a href="manage-assignments.html" class="btn">
+                Manage Assignments
+            </a>
+        </div>
+
+    </main>
+</div>
+
+<script src="../js/faculty.js"></script>
+</body>
+</html>
