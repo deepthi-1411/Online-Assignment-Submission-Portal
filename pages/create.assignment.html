@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Assignment</title>
+    <link rel="stylesheet" href="../css/faculty.css">
+</head>
+<body>
+
+<header class="topbar">
+    <h2>Online Assignment Portal</h2>
+    <span>Create Assignment</span>
+</header>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h3>Faculty Menu</h3>
+        <a href="faculty-dashboard.html">Dashboard</a>
+        <a href="create-assignment.html">Create Assignment</a>
+        <a href="manage-assignments.html">Manage Assignments</a>
+    </aside>
+
+    <main class="content">
+
+        <h1>Create New Assignment</h1>
+
+        <form id="assignmentForm">
+
+            <label>Assignment Title</label>
+            <input type="text" id="title"
+            placeholder="Enter assignment title" required>
+
+            <label>Subject</label>
+            <input type="text" id="subject"
+            placeholder="Enter subject name" required>
+
+            <label>Description</label>
+            <textarea id="description"
+            placeholder="Enter assignment description"
+            required></textarea>
+
+            <label>Due Date</label>
+            <input type="date" id="deadline" required>
+
+            <label>Maximum Marks</label>
+            <input type="number" id="marks"
+            min="1" required>
+
+            <button type="submit" class="btn">
+                Publish Assignment
+            </button>
+
+        </form>
+
+    </main>
+</div>
+
+<script src="../js/faculty.js"></script>
+</body>
+</html>
